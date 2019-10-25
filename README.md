@@ -5,3 +5,4 @@
 ## Como participar:
 
 ## Como contribuir:
+  Através do GitHub
