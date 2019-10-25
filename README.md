@@ -1,7 +1,8 @@
 # Hacktoberfest-2019
 
-## O que é
+## O que é:
 
-## Como participar
+## Como participar:
 
-## Como contribuir
+## Como contribuir:
+  Através do GitHub
