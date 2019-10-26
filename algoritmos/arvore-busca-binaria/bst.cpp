@@ -114,7 +114,7 @@ int main() {
         } else if (input_string == "POSFIXA") {
             Vi v(0);
             postefixo(raiz, v);
-            
+
             printf("%d", v[0]);
             for (int i = 1; i < v.size(); i++) printf(" %d", v[i]);
             cout << endl;
