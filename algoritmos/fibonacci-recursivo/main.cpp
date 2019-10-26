@@ -5,9 +5,11 @@
 int main(){
   int rep;
   do{
+    
     int number;
     std::cout << "Numero: ";
     std::cin >> number;
+
     std::cout << "+-+-+-+-+-+-+-+-+-+-+-+-+-+-+-+-+-+-+\n";
     std::cout << "+- (1) Padrao                      -+\n";
     std::cout << "+- (2) Programacao Dinamica        -+\n";
@@ -15,7 +17,9 @@ int main(){
     std::cout << "+-+-+-+-+-+-+-+-+-+-+-+-+-+-+-+-+-+-+\n";
     std::cout << "Operacao: ";
     int op; std::cin >> op;
+
     auto startTime = std::chrono::high_resolution_clock::now();
+
     if(op == 1){
       std::cout << "fibonacci(" << number << ") = " << fibonacci(number) << std::endl;
     } else if(op == 2){
@@ -26,8 +30,10 @@ int main(){
       std::cout << "Opcao invalida\n";
       break;
     }
+
     auto endTime = std::chrono::high_resolution_clock::now();
     auto duration = std::chrono::duration_cast<std::chrono::microseconds>(endTime - startTime);
+
     std::cout << "Operacao levou " << duration.count() / 1000<< " milisegundos" << std::endl;
     std::cout << "+-+-+-+-+-+-+-+-+-+-+-+-+-+-+-+-+-+-+\n";
     std::cout << "+- (1) Sim                         -+\n";
@@ -35,6 +41,7 @@ int main(){
     std::cout << "+-+-+-+-+-+-+-+-+-+-+-+-+-+-+-+-+-+-+\n";
     std::cout << "Repetir ? ";
     std::cin >> rep;
+
   } while (rep == 1);
 
   return 0;
