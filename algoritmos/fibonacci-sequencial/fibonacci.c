@@ -2,10 +2,10 @@
 
 int main()
   {
-    int n,i,fn,fant,fprox;
+    long long int n,i,fn,fant,fprox;
 
     printf("\nDigite o valor de n: ");
-    scanf("%d", &n);
+    scanf("%lld", &n);
 
     i = 0;
     fant = 0;
@@ -19,7 +19,7 @@ int main()
         i = i + 1;
       }
 
-    printf ("O %d número da sequência de Fibonacci é: %d\n", n, fn);
+    printf ("O %lld número da sequência de Fibonacci é: %lld\n", n, fn);
 
     return 0;
   }
