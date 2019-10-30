@@ -1,4 +1,5 @@
 
+
 #include <stdio.h>
 
 
@@ -11,6 +12,7 @@ int main (void){
         rest *= valor;//repetição por exaustao
     }
     return 0;
+
 }
 
 
