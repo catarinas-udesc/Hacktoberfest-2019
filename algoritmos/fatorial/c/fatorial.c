@@ -1,12 +1,18 @@
-#include "fatorial.h"
 
-long long int fatorial (long long int parametro) {
-    
-    long long int fatorial = 1;
-    
-    for (parametro; parametro > 1; parametro --) {
-        fatorial *= parametro;
+
+#include <stdio.h>
+
+
+int main (void){
+    int valor;// declaração de variavel
+    scanf("%d", &valor);
+    int i;
+    int rest = 1; // ponto de acumulo do valor
+    for (i=1;i<=valor;i++){
+        rest *= valor;//repetição por exaustao
     }
-    
-    return fatorial;
+    return 0;
+
 }
+
+
